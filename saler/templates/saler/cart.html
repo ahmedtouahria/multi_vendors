@@ -142,10 +142,10 @@
         },
         success: function (data) {
           eml.innerText = data.num;
-          document.getElementById('subtotal').innerHTML = `DA${data.subtotal}`;
-          document.getElementById('total').innerHTML = `DA${data.total}`;
-          document.getElementById('tax').innerHTML = `DA${data.tax}`;
-          document.getElementById('delev').innerHTML = `DA${data.delev}`;
+          document.getElementById('subtotal').innerHTML = `${data.subtotal}DA`;
+          document.getElementById('total').innerHTML = `${data.total}DA`;
+          document.getElementById('tax').innerHTML = `${data.tax}DA`;
+          document.getElementById('delev').innerHTML = `${data.delev}DA`;
         }
       })
   });
